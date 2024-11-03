@@ -191,6 +191,57 @@ legend {
 [type=number]::-webkit-outer-spin-button {
     height: auto
 }
+body {
+    font-family: 'Arial', sans-serif; /* Use a clean font */
+    background-color: #f4f4f4; /* Light background color */
+    margin: 0;
+    padding: 20px;
+}
+
+.btn-box {
+    max-width: 600px; /* Set a max width for the box */
+    margin: 50px auto; /* Center the box horizontally */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text within the box */
+}
+
+h1 {
+    color: #333; /* Darker text for the title */
+    font-size: 2.5em; /* Larger font size for the title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+p {
+    color: #666; /* Lighter color for the paragraph */
+    font-size: 1.2em; /* Slightly larger text for readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.download-btn {
+    display: inline-block; /* Make the link a button */
+    padding: 15px 30px; /* Padding for the button */
+    font-size: 1.2em; /* Button font size */
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Button color */
+    border-radius: 30px; /* Fully rounded button */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.5); /* Shadow for depth */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.download-btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.download-btn:active {
+    transform: translateY(0); /* Reset on click */
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.5); /* Reduced shadow on click */
+}
+
 
 [type=search] {
     -webkit-appearance: textfield;
