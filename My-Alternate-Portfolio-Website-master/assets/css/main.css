@@ -193,7 +193,11 @@ legend {
 }
 body {
     font-family: 'Arial', sans-serif; /* Use a clean font */
-    background-color: #f4f4f4; /* Light background color */
+    background-image: url('background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
     margin: 0;
     padding: 20px;
 }
@@ -5045,6 +5049,65 @@ a img {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+/* General styling for the button box */
+.btn-box {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: white;
+    padding: 30px 15px; /* Reduced padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 300px; /* Reduced width */
+    margin: 0 auto;
+    transform: translateY(30px);
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Headings */
+.btn-box h1 {
+    font-size: 1.8em; /* Reduced font size */
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Paragraph styling */
+.btn-box p {
+    font-size: 1em; /* Reduced font size */
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+/* Download button styling */
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px; /* Reduced padding */
+    font-size: 1em; /* Reduced font size */
+    font-weight: bold;
+    background: linear-gradient(145deg, #ff6a00, #ffbc00); /* Gradient background */
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2), -2px -2px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the button */
+.download-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4), -2px -2px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Animation for fade-in and slide-up effect */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .user p {
     font-size: 16px
@@ -5155,11 +5218,11 @@ a img {
 }
 
 .footer {
-    background: #1488CC;
+    background: #b1c3ce;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);
+    background: -webkit-linear-gradient(to right, #abacbc, #bfc9cf);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2B32B2, #1488CC);
+    background: linear-gradient(to right, #dedfe3, #ced4d8);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10px 0;
     margin-top: 100px;
